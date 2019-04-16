@@ -1,0 +1,11 @@
+C:\Users\3than\OneDrive\Documents\CodingDojo\Algorithms\AdjacentGraph\bin\Debug\netcoreapp2.1\AdjacentGraph.deps.json
+C:\Users\3than\OneDrive\Documents\CodingDojo\Algorithms\AdjacentGraph\bin\Debug\netcoreapp2.1\AdjacentGraph.runtimeconfig.json
+C:\Users\3than\OneDrive\Documents\CodingDojo\Algorithms\AdjacentGraph\bin\Debug\netcoreapp2.1\AdjacentGraph.runtimeconfig.dev.json
+C:\Users\3than\OneDrive\Documents\CodingDojo\Algorithms\AdjacentGraph\bin\Debug\netcoreapp2.1\AdjacentGraph.dll
+C:\Users\3than\OneDrive\Documents\CodingDojo\Algorithms\AdjacentGraph\bin\Debug\netcoreapp2.1\AdjacentGraph.pdb
+C:\Users\3than\OneDrive\Documents\CodingDojo\Algorithms\AdjacentGraph\obj\Debug\netcoreapp2.1\AdjacentGraph.csprojAssemblyReference.cache
+C:\Users\3than\OneDrive\Documents\CodingDojo\Algorithms\AdjacentGraph\obj\Debug\netcoreapp2.1\AdjacentGraph.csproj.CoreCompileInputs.cache
+C:\Users\3than\OneDrive\Documents\CodingDojo\Algorithms\AdjacentGraph\obj\Debug\netcoreapp2.1\AdjacentGraph.AssemblyInfoInputs.cache
+C:\Users\3than\OneDrive\Documents\CodingDojo\Algorithms\AdjacentGraph\obj\Debug\netcoreapp2.1\AdjacentGraph.AssemblyInfo.cs
+C:\Users\3than\OneDrive\Documents\CodingDojo\Algorithms\AdjacentGraph\obj\Debug\netcoreapp2.1\AdjacentGraph.dll
+C:\Users\3than\OneDrive\Documents\CodingDojo\Algorithms\AdjacentGraph\obj\Debug\netcoreapp2.1\AdjacentGraph.pdb
