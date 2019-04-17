@@ -78,5 +78,44 @@ namespace AdjacentGraph
             System.Console.WriteLine($"No connection found, returning false.");
             return false;
         }
+
+        private bool RecursiveDepthFirstConnectionSearch(T startValue, T endValue, Dictionary<T,bool> checkedVertices)
+        {
+            if ((ValueIndexDict[startValue] is null) || (ValueIndexDict[endValue] is null))
+                return false;
+            else if (startValue.Equals(endValue))
+            {
+                System.Console.WriteLine($"Connection found!!! {endValue} connection found from {startValue}, returning true!");
+                return true;
+            }
+            LinkedListNode<T> headOfList = AdjacencyArray[(int) ValueIndexDict[startValue]].First;
+            LinkedListNode<T> runner = headOfList.Next;
+            System.Console.WriteLine($"Checking adjacency list for {startValue}");
+            System.Console.WriteLine($"Runner initialized at {runner}");
+            while (runner != null)
+            {
+                if (!checkedVertices.ContainsKey(runner.Value))
+                {
+                    checkedVertices[runner.Value] = true;
+                    System.Console.WriteLine($"Added to checked vertices dictionary: {runner.Value}");
+                    bool recursionReturn = RecursiveDepthFirstConnectionSearch(runner.Value, endValue, checkedVertices);
+                    if (recursionReturn)
+                        return true;
+                }
+                runner = runner.Next;
+                System.Console.WriteLine("Runner incremented");
+            }
+            System.Console.WriteLine("Runner now null, returning false");
+            return false;
+        }
+
+        public bool DepthFirstConnectionSearchUsingRecursion(T startValue, T endValue)
+        {
+            System.Console.WriteLine($"Search started from {startValue} to {endValue}.");
+            Dictionary<T,bool> checkedVertices = new Dictionary<T, bool>();
+            checkedVertices.Add(startValue, true);
+            System.Console.WriteLine($"Added to checked vertices dictionary: {startValue}");
+            return RecursiveDepthFirstConnectionSearch(startValue, endValue, checkedVertices);
+        }
     }
 }

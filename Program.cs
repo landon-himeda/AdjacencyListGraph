@@ -20,10 +20,15 @@ namespace AdjacentGraph
             .AddDirectedEdge('D', 'A')
             .AddDirectedEdge('E', 'B');
 
-            charGraph.BreadthFirstConnectionSearch('A', 'B');
-            charGraph.BreadthFirstConnectionSearch('A', 'D');
-            charGraph.BreadthFirstConnectionSearch('E', 'A');
-            charGraph.BreadthFirstConnectionSearch('D', 'D');
+            // charGraph.BreadthFirstConnectionSearch('A', 'B');
+            // charGraph.BreadthFirstConnectionSearch('A', 'D');
+            // charGraph.BreadthFirstConnectionSearch('E', 'A');
+            // charGraph.BreadthFirstConnectionSearch('D', 'D');
+
+            charGraph.DepthFirstConnectionSearchUsingRecursion('A', 'B');
+            charGraph.DepthFirstConnectionSearchUsingRecursion('A', 'D');
+            charGraph.DepthFirstConnectionSearchUsingRecursion('E', 'A');
+            charGraph.DepthFirstConnectionSearchUsingRecursion('D', 'D');
         }
     }
 }
